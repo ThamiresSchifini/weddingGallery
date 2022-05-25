@@ -4,7 +4,7 @@ export const requestService = {
     put,
 };
 
-const baseUrl = 'http://localhost:5000';
+const baseUrl = 'http://52.73.128.255:5000';
 
 function buildHeaders(use_multipart = false) {
     const headers = {
