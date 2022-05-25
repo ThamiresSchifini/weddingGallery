@@ -3,8 +3,8 @@
     <img :src="photo.url" class="card-img-top border-bottom" alt="foto do casamento">
 
     <div class="card-body">
-      <h5 class="card-title">{{ photo.description }}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Author: {{ photo.author }}</h6>
+      <h5 class="card-title">{{ photo.author }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Author: {{ photo.description }}</h6>
 
       <div class="d-flex justify-content-between py-2 w-100">
         <button @click="onAddLike()" :disabled="!canGiveLike"  class="btn btn-outline-primary" >
