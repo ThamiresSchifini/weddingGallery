@@ -8,8 +8,8 @@
       <PhotoListComponent :photos="photos"/>
     </div>
 
-    <button class="btn btn-primary w-100 fixed-bottom" @click="onClickAddPhoto">
-      <h1>Add Photo</h1>
+    <button class="btn btn-primary w-100 fixed-bottom upload" @click="onClickAddPhoto">
+      <h1>ADD PHOTO</h1>
     </button>
 
     <PhotoUploadModalComponent
@@ -195,4 +195,9 @@ export default {
 .modal-fade-leave-active {
   transition: opacity .5s ease;
 }
+
+.upload {
+    border-radius: 15px 15px 0 0;
+}
+
 </style>
