@@ -4,7 +4,7 @@ export const requestService = {
     put,
 };
 
-const baseUrl = 'http://52.73.128.255:5000';
+const baseUrl = process.env.VUE_APP_API_HOST;
 
 function buildHeaders(use_multipart = false) {
     const headers = {
