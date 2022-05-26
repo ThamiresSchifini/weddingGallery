@@ -16,7 +16,7 @@ First, you need to build the images:
 
 **Frontend** (can be execute without backend):
 `cd frontend`
-`echo "VUE_APP_API_HOST='http://<the backend host without port>'"`(use 52.73.128.255 when running without backend)
+`echo "VUE_APP_API_HOST='http://<the backend host without port>'" > .env.production`(use 52.73.128.255 when running without backend)
 `docker build -t gallery-frontend .`
 `docker run -p 80:8080 gallery-frontend`
 
