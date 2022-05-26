@@ -2,7 +2,7 @@
   <header class="position-fixed border border-primary border-2 p-2 w-100">
     <div class="d-flex justify-content-between w-100">
       <h1>Wedding Gallery</h1>
-      <button class="btn btn-primary" id="show-modal" @click="onClickLogin">{{ userName ?? 'Login' }}</button>
+      <button class="btn btn-primary" id="show-modal" @click="onClickLogin">{{ userName ?? 'LOGIN' }}</button>
     </div>
   </header>
 </template>
