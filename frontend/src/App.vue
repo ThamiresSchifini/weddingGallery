@@ -125,6 +125,7 @@ export default {
 .body-container {
   position: relative;
   top: 70px;
+  padding-bottom: 60px;
 }
 
 .modal-backdrop {
