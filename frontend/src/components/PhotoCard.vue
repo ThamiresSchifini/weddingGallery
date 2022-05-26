@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      <ul class="list-group list-group-flush">
+      <ul class="list-group list-group-flush border">
         <li class="list-group-item" :key="comment" v-for="comment in commentsList">
           <PhotoCommentComponent :text="comment" />
         </li>
