@@ -3,8 +3,10 @@
     <img :src="photo.url" class="card-img-top border-bottom" alt="foto do casamento">
 
     <div class="card-body">
-      <h5 class="card-title">{{ photo.author }}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Author: {{ photo.description }}</h6>
+      <div class="border">
+          <h5 class="card-title">{{ photo.author }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Author: {{ photo.description }}</h6>
+      </div>
 
       <div class="d-flex justify-content-between py-2 w-100">
         <button @click="onAddLike()" :disabled="!canGiveLike"  class="btn btn-outline-primary" >
@@ -114,8 +116,15 @@ export default {
 .card {
   min-width: 350px;
   max-width: 500px;
+  background-color: mistyrose;
 }
 .card-img-top {
   min-height: 250px;
+}
+.btn {
+background-color: white;
+}
+.border {
+background-color:white
 }
 </style>
