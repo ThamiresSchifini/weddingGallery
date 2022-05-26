@@ -28,10 +28,9 @@ def create_app(**kwargs):
     app.register_blueprint(photos_blueprint)
     app.register_blueprint(users_blueprint)
 
-    mongo_user = config('MONGO_USER', kwargs.get('MONGO_USER'))
-    mongo_password = config('MONGO_PASS', kwargs.get('MONGO_PASS'))
+    mongo_host = config('MONGO_HOST', kwargs.get('MONGO_HOST'))
     client = MongoClient(
-        f'mongodb+srv://{mongo_user}:{mongo_password}@thataweddinggallery.imcdb.mongodb.net/?retryWrites=true&w=majority'
+        mongo_host
     )
 
     @app.before_request
