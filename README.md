@@ -4,6 +4,10 @@
 This project is a public gallery for everyone that wants to 
 upload their cute photos (but only the superusers can approve to become visible).
 
+![Screenshot on mobile](docs/couple-gallery-mobile.png "Screenshot on mobile")
+
+![Screenshot on browser](docs/couple-gallery-desktop.png "Screenshot on browser")
+
 
 ## Quickstart
 ### Requirements:
