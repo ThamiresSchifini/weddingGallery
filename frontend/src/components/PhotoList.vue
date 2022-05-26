@@ -1,7 +1,7 @@
 <template>
   <div
       class="border rounded border-dark border-1
-            m-1 p-1 h-100
+            m-1 p-1 h-100 photo-container
             d-flex justify-content-between flex-wrap
       ">
     <div :key="photo.id" v-for="photo in photos" class="flex-fill text-center mx-2">
@@ -25,5 +25,7 @@ export default {
 </script>
 
 <style scoped>
-
+    .photo-container {
+        background-color: whitesmoke;
+    }
 </style>
